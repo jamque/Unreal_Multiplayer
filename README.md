@@ -20,3 +20,27 @@ Conecting two intances in the same machine or in a local network using [Hamachi]
 - The **PlayerController** joins the **Map**
 - It ask the **GameMode** to Spawn a **Pawn**
 - The **Pawn** is linked to the **PlayerController**.
+
+## Multiplayer Games : Types
+- Turn based : Chess
+	- Must be Synchronous? NO
+	- Session Length: Variable
+	- As a indie developer, suitability? No problem
+	- Unreal Support: Minimal
+- Real-time session-bassed : First Person Shooter
+	- Must be Synchronous? YES
+	- Session Length: Less than 1 hour
+	- As a indie developer, suitability? Good
+	- Unreal Support: Perfect, of course. Unreal born as a FPS engine.
+- MMO and Persistent World :
+	- Must be Synchronous? YES
+	- Session Length: Potentially infinite
+	- As a indie developer, suitability? Technical aspect to cover, difficult
+	- Unreal Support: Minimal
+
+### Session-Based Stages (3)
+ 1. Discovery. Find a session to Join
+ 2. Connection. Hooking up to client.
+ 3. Synchronisation. Players see the same.
+
+First of all, Connecction is the first thing to learn. Using Unreal stuff that done it for us.
